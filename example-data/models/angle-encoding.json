@@ -1,0 +1,115 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "name": "My Model",
+    "description": "This is a model.",
+    "author": "",
+    "id": "flow-1767778702605",
+    "timestamp": "2026-01-07T09:38:22.605Z"
+  },
+  "nodes": [
+    {
+      "id": "553c27ba-a796-4552-93f5-70e6f7e02cc0",
+      "type": "dataTypeNode",
+      "position": {
+        "x": 465,
+        "y": 180
+      },
+      "data": {
+        "label": "float",
+        "inputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": false,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "identifiers": [
+          "q107279"
+        ],
+        "dataType": "float",
+        "value": "",
+        "outputIdentifier": ""
+      },
+      "width": 450,
+      "height": 270,
+      "positionAbsolute": {
+        "x": 465,
+        "y": 180
+      },
+      "dragging": true
+    },
+    {
+      "id": "d4b4bb9b-bada-46c4-8ed5-72659abb9a5e",
+      "type": "statePreparationNode",
+      "position": {
+        "x": 1110,
+        "y": 210
+      },
+      "data": {
+        "label": "Angle Encoding",
+        "inputs": [
+          {
+            "id": "553c27ba-a796-4552-93f5-70e6f7e02cc0",
+            "outputIdentifier": "",
+            "identifiers": [
+              "q107279"
+            ]
+          },
+          {
+            "id": "553c27ba-a796-4552-93f5-70e6f7e02cc0",
+            "identifiers": [
+              "q107279"
+            ]
+          }
+        ],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": false,
+        "compactOptions": [
+          false
+        ],
+        "identifiers": [
+          "q805250"
+        ],
+        "encodingType": "Angle Encoding"
+      },
+      "width": 320,
+      "height": 373,
+      "positionAbsolute": {
+        "x": 1110,
+        "y": 210
+      },
+      "dragging": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "553c27ba-a796-4552-93f5-70e6f7e02cc0",
+      "sourceHandle": "classicalHandleDataTypeOutput0553c27ba-a796-4552-93f5-70e6f7e02cc0",
+      "target": "d4b4bb9b-bada-46c4-8ed5-72659abb9a5e",
+      "targetHandle": "classicalHandleStatePreparationInput0d4b4bb9b-bada-46c4-8ed5-72659abb9a5e",
+      "type": "classicalEdge",
+      "id": "d87cf3a1-e4d5-45e4-9692-46cbb9206541",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#F5A843",
+        "hidden": false
+      }
+    }
+  ],
+  "viewport": {
+    "x": -425.854321357834,
+    "y": 47.84085740119747,
+    "zoom": 0.8414893084776158
+  }
+}

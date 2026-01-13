@@ -1,0 +1,120 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "name": "My Model",
+    "description": "This is a model.",
+    "author": "",
+    "id": "flow-1767778792826",
+    "timestamp": "2026-01-07T09:39:52.826Z"
+  },
+  "nodes": [
+    {
+      "id": "7a9288a3-9aa0-4076-ab63-7ffc9cb168a7",
+      "type": "statePreparationNode",
+      "position": {
+        "x": 1110,
+        "y": 45
+      },
+      "data": {
+        "label": "Encode Value",
+        "inputs": [
+          {
+            "id": "ecb2442d-92c6-49ba-ac52-ec755b1e7600",
+            "outputIdentifier": "",
+            "identifiers": [
+              "q786097"
+            ],
+            "label": ""
+          },
+          {
+            "id": "ecb2442d-92c6-49ba-ac52-ec755b1e7600",
+            "identifiers": [
+              "q786097"
+            ]
+          }
+        ],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true
+        ],
+        "identifiers": [
+          "q576454"
+        ],
+        "encodingType": "Matrix Encoding",
+        "bound": 0,
+        "size": "",
+        "outputIdentifier": ""
+      },
+      "width": 320,
+      "height": 373,
+      "positionAbsolute": {
+        "x": 1110,
+        "y": 45
+      },
+      "dragging": true
+    },
+    {
+      "id": "ecb2442d-92c6-49ba-ac52-ec755b1e7600",
+      "type": "dataTypeNode",
+      "position": {
+        "x": 510,
+        "y": 150
+      },
+      "data": {
+        "label": "Array",
+        "inputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "identifiers": [
+          "q786097"
+        ],
+        "dataType": "Array",
+        "value": "",
+        "outputIdentifier": ""
+      },
+      "width": 450,
+      "height": 270,
+      "positionAbsolute": {
+        "x": 510,
+        "y": 150
+      },
+      "dragging": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "ecb2442d-92c6-49ba-ac52-ec755b1e7600",
+      "sourceHandle": "classicalHandleDataTypeOutput0ecb2442d-92c6-49ba-ac52-ec755b1e7600",
+      "target": "7a9288a3-9aa0-4076-ab63-7ffc9cb168a7",
+      "targetHandle": "classicalHandleStatePreparationInput07a9288a3-9aa0-4076-ab63-7ffc9cb168a7",
+      "type": "classicalEdge",
+      "id": "b51268cd-5c9f-44c9-8096-a9570f51a69c",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#F5A843",
+        "hidden": false
+      },
+      "selected": false
+    }
+  ],
+  "viewport": {
+    "x": -439.854321357834,
+    "y": 61.84085740119747,
+    "zoom": 0.8414893084776158
+  }
+}

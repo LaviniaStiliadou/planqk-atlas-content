@@ -1,0 +1,570 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "name": "My Model",
+    "description": "This is a model.",
+    "author": "",
+    "id": "flow-1767454383036",
+    "timestamp": "2026-01-03T15:33:03.036Z"
+  },
+  "nodes": [
+    {
+      "id": "34447ac1-91e3-43d0-9ea5-d56dca87ad10",
+      "type": "controlStructureNode",
+      "position": {
+        "x": 330,
+        "y": 300
+      },
+      "data": {
+        "label": "While",
+        "condition": "iterations < maxIterations",
+        "inputs": [
+          {
+            "id": "ad4933d4-c7a7-4b34-bdd5-56751b4c9396",
+            "identifiers": [
+              "q770118"
+            ],
+            "outputIdentifier": "beta",
+            "label": "beta"
+          },
+          {
+            "id": "96e94d2e-0d1f-4eaa-a29b-4feb0714f3e8",
+            "identifiers": [
+              "q401156"
+            ],
+            "outputIdentifier": "maxIterations",
+            "label": "maxIterations"
+          },
+          {
+            "id": "0666d671-1c74-450e-b42c-f21195c0c652",
+            "identifiers": [
+              "q379648"
+            ],
+            "outputIdentifier": "gamma",
+            "label": "gamma"
+          },
+          {
+            "id": "11eea450-a9eb-402e-895e-547e88563d29",
+            "outputIdentifier": "gamma ",
+            "identifiers": [
+              "q850150"
+            ],
+            "label": "gamma"
+          }
+        ],
+        "children": [
+          "b42ee564-4f10-4448-ba52-241d941e56bb",
+          "11eea450-a9eb-402e-895e-547e88563d29",
+          "df335fe3-88f4-42c6-b0a8-e1e30bd1280f"
+        ],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": false,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "identifiers": [
+          "q430547"
+        ]
+      },
+      "width": 1600,
+      "height": 1300,
+      "positionAbsolute": {
+        "x": 330,
+        "y": 300
+      }
+    },
+    {
+      "id": "0666d671-1c74-450e-b42c-f21195c0c652",
+      "type": "dataTypeNode",
+      "position": {
+        "x": -615,
+        "y": 930
+      },
+      "data": {
+        "label": "Array",
+        "inputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "identifiers": [
+          "q379648"
+        ],
+        "dataType": "Array",
+        "value": "0.5,0.5",
+        "outputIdentifier": "gamma",
+        "outputs": [
+          {
+            "identifier": "gamma",
+            "size": "",
+            "type": "classical"
+          }
+        ]
+      },
+      "width": 450,
+      "height": 270,
+      "positionAbsolute": {
+        "x": -615,
+        "y": 930
+      },
+      "dragging": true
+    },
+    {
+      "id": "ad4933d4-c7a7-4b34-bdd5-56751b4c9396",
+      "type": "dataTypeNode",
+      "position": {
+        "x": -645,
+        "y": 585
+      },
+      "data": {
+        "label": "Array",
+        "inputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "identifiers": [
+          "q770118"
+        ],
+        "dataType": "Array",
+        "value": "0.5,0.5",
+        "outputIdentifier": "beta",
+        "outputs": [
+          {
+            "identifier": "beta",
+            "size": "",
+            "type": "classical"
+          }
+        ]
+      },
+      "width": 450,
+      "height": 270,
+      "positionAbsolute": {
+        "x": -645,
+        "y": 585
+      },
+      "dragging": true
+    },
+    {
+      "id": "96e94d2e-0d1f-4eaa-a29b-4feb0714f3e8",
+      "type": "dataTypeNode",
+      "position": {
+        "x": -660,
+        "y": 240
+      },
+      "data": {
+        "label": "Number",
+        "inputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "identifiers": [
+          "q401156"
+        ],
+        "dataType": "Number",
+        "value": "10",
+        "outputIdentifier": "maxIterations",
+        "outputs": [
+          {
+            "identifier": "maxIterations",
+            "size": "",
+            "type": "classical"
+          }
+        ]
+      },
+      "width": 450,
+      "height": 270,
+      "positionAbsolute": {
+        "x": -660,
+        "y": 240
+      },
+      "dragging": true
+    },
+    {
+      "id": "b42ee564-4f10-4448-ba52-241d941e56bb",
+      "type": "algorithmNode",
+      "position": {
+        "x": 255,
+        "y": 780
+      },
+      "data": {
+        "label": "QAOA Operator",
+        "p": 2,
+        "condition": 2,
+        "inputs": [
+          {
+            "id": "34447ac1-91e3-43d0-9ea5-d56dca87ad10",
+            "identifiers": [
+              "q430547"
+            ]
+          }
+        ],
+        "children": [
+          "b42ee564-4f10-4448-ba52-241d941e56bb",
+          "11eea450-a9eb-402e-895e-547e88563d29",
+          "df335fe3-88f4-42c6-b0a8-e1e30bd1280f"
+        ],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "identifiers": [
+          "q635291"
+        ],
+        "position": {
+          "x": 270,
+          "y": 375
+        },
+        "scope": "if",
+        "numberInputs": "2",
+        "numberOutputs": "1"
+      },
+      "width": 320,
+      "height": 373,
+      "positionAbsolute": {
+        "x": 585,
+        "y": 1080
+      },
+      "dragging": true,
+      "parentNode": "34447ac1-91e3-43d0-9ea5-d56dca87ad10",
+      "extent": "parent"
+    },
+    {
+      "id": "11eea450-a9eb-402e-895e-547e88563d29",
+      "type": "optimizer",
+      "position": {
+        "x": 1065,
+        "y": 405
+      },
+      "data": {
+        "label": "Optimizer",
+        "inputs": [
+          {
+            "id": "34447ac1-91e3-43d0-9ea5-d56dca87ad10",
+            "identifiers": [
+              "q430547"
+            ]
+          },
+          {
+            "id": "df335fe3-88f4-42c6-b0a8-e1e30bd1280f",
+            "identifiers": [
+              "q950177"
+            ],
+            "outputIdentifier": ""
+          }
+        ],
+        "children": [
+          "b42ee564-4f10-4448-ba52-241d941e56bb",
+          "11eea450-a9eb-402e-895e-547e88563d29",
+          "df335fe3-88f4-42c6-b0a8-e1e30bd1280f"
+        ],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "identifiers": [
+          "q850150"
+        ],
+        "position": {
+          "x": 735,
+          "y": 465
+        },
+        "scope": "if",
+        "outputIdentifier": "gamma ",
+        "outputs": [
+          {
+            "identifier": "beta",
+            "size": "",
+            "type": "classical"
+          },
+          {
+            "identifier": "gamma ",
+            "size": "",
+            "type": "classical"
+          }
+        ]
+      },
+      "width": 320,
+      "height": 373,
+      "positionAbsolute": {
+        "x": 1395,
+        "y": 705
+      },
+      "dragging": true,
+      "parentNode": "34447ac1-91e3-43d0-9ea5-d56dca87ad10",
+      "extent": "parent"
+    },
+    {
+      "id": "df335fe3-88f4-42c6-b0a8-e1e30bd1280f",
+      "type": "measurementNode",
+      "position": {
+        "x": 615,
+        "y": 825
+      },
+      "data": {
+        "label": "Measurement",
+        "inputs": [
+          {
+            "id": "b42ee564-4f10-4448-ba52-241d941e56bb",
+            "identifiers": [
+              "q635291"
+            ]
+          }
+        ],
+        "children": [
+          "b42ee564-4f10-4448-ba52-241d941e56bb",
+          "11eea450-a9eb-402e-895e-547e88563d29",
+          "df335fe3-88f4-42c6-b0a8-e1e30bd1280f"
+        ],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "identifiers": [
+          "q950177"
+        ],
+        "indices": "",
+        "outputIdentifier": "",
+        "position": {
+          "x": 615,
+          "y": 825
+        },
+        "scope": "if"
+      },
+      "width": 320,
+      "height": 440,
+      "positionAbsolute": {
+        "x": 945,
+        "y": 1125
+      },
+      "dragging": true,
+      "parentNode": "34447ac1-91e3-43d0-9ea5-d56dca87ad10",
+      "extent": "parent"
+    }
+  ],
+  "edges": [
+    {
+      "source": "11eea450-a9eb-402e-895e-547e88563d29",
+      "sourceHandle": "classicalHandle11eea450-a9eb-402e-895e-547e88563d29-1",
+      "target": "34447ac1-91e3-43d0-9ea5-d56dca87ad10",
+      "targetHandle": "classicalHandleInputDynamic34447ac1-91e3-43d0-9ea5-d56dca87ad10-1",
+      "type": "classicalEdge",
+      "id": "1c4b0d10-ea9a-4de3-9f5e-b6c70bdee64b",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#F5A843",
+        "hidden": false
+      }
+    },
+    {
+      "source": "11eea450-a9eb-402e-895e-547e88563d29",
+      "sourceHandle": "classicalHandle11eea450-a9eb-402e-895e-547e88563d29-0",
+      "target": "34447ac1-91e3-43d0-9ea5-d56dca87ad10",
+      "targetHandle": "classicalHandleInputDynamic34447ac1-91e3-43d0-9ea5-d56dca87ad10-0",
+      "type": "classicalEdge",
+      "id": "78539854-ea07-4087-bbe0-c62b539d1cbf",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#F5A843",
+        "hidden": false
+      }
+    },
+    {
+      "source": "df335fe3-88f4-42c6-b0a8-e1e30bd1280f",
+      "sourceHandle": "classicalHandledf335fe3-88f4-42c6-b0a8-e1e30bd1280f-0",
+      "target": "11eea450-a9eb-402e-895e-547e88563d29",
+      "targetHandle": "classicalHandleOperationInput311eea450-a9eb-402e-895e-547e88563d29",
+      "type": "classicalEdge",
+      "id": "52c97dca-6c75-492b-b3d2-3bd1d785a47a",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#F5A843",
+        "hidden": false
+      }
+    },
+    {
+      "source": "34447ac1-91e3-43d0-9ea5-d56dca87ad10",
+      "sourceHandle": "classicalHandleOutputInitialization34447ac1-91e3-43d0-9ea5-d56dca87ad10-1",
+      "target": "11eea450-a9eb-402e-895e-547e88563d29",
+      "targetHandle": "classicalHandleOperationInput211eea450-a9eb-402e-895e-547e88563d29",
+      "type": "classicalEdge",
+      "id": "f1467d71-e9cc-4a02-b8a3-2f02a8b23acc",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#F5A843",
+        "hidden": false
+      }
+    },
+    {
+      "source": "34447ac1-91e3-43d0-9ea5-d56dca87ad10",
+      "sourceHandle": "classicalHandleOutputInitialization34447ac1-91e3-43d0-9ea5-d56dca87ad10-1",
+      "target": "11eea450-a9eb-402e-895e-547e88563d29",
+      "targetHandle": "classicalHandleOperationInput111eea450-a9eb-402e-895e-547e88563d29",
+      "type": "classicalEdge",
+      "id": "7382b8e1-11e7-4da7-823b-ffede61d1aba",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#F5A843",
+        "hidden": false
+      }
+    },
+    {
+      "source": "b42ee564-4f10-4448-ba52-241d941e56bb",
+      "sourceHandle": "quantumHandlealgorithmNodeOutput0b42ee564-4f10-4448-ba52-241d941e56bb",
+      "target": "df335fe3-88f4-42c6-b0a8-e1e30bd1280f",
+      "targetHandle": "quantumHandleMeasurementInput0df335fe3-88f4-42c6-b0a8-e1e30bd1280f",
+      "type": "quantumEdge",
+      "id": "8d56dc1c-6bcb-4b02-b207-f2aafaec639a",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "34447ac1-91e3-43d0-9ea5-d56dca87ad10",
+      "sourceHandle": "classicalHandleOutputInitialization34447ac1-91e3-43d0-9ea5-d56dca87ad10-2",
+      "target": "b42ee564-4f10-4448-ba52-241d941e56bb",
+      "targetHandle": "classicalHandleOperationInput1b42ee564-4f10-4448-ba52-241d941e56bb",
+      "type": "classicalEdge",
+      "id": "ecf78dae-b7f4-4930-b979-e745022732c3",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#F5A843",
+        "hidden": false
+      }
+    },
+    {
+      "source": "34447ac1-91e3-43d0-9ea5-d56dca87ad10",
+      "sourceHandle": "classicalHandleOutputInitialization34447ac1-91e3-43d0-9ea5-d56dca87ad10-1",
+      "target": "b42ee564-4f10-4448-ba52-241d941e56bb",
+      "targetHandle": "classicalHandleOperationInput0b42ee564-4f10-4448-ba52-241d941e56bb",
+      "type": "classicalEdge",
+      "id": "d0be1c2c-65e6-4ec6-adf9-112f01633ff3",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#F5A843",
+        "hidden": false
+      }
+    },
+    {
+      "source": "34447ac1-91e3-43d0-9ea5-d56dca87ad10",
+      "sourceHandle": "classicalHandleOutputInitialization34447ac1-91e3-43d0-9ea5-d56dca87ad10-0",
+      "target": "11eea450-a9eb-402e-895e-547e88563d29",
+      "targetHandle": "classicalHandleOperationInput011eea450-a9eb-402e-895e-547e88563d29",
+      "type": "classicalEdge",
+      "id": "b17ad5db-b175-4969-a33a-867aaee5afcd",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#F5A843",
+        "hidden": false
+      }
+    },
+    {
+      "source": "0666d671-1c74-450e-b42c-f21195c0c652",
+      "sourceHandle": "classicalHandleDataTypeOutput00666d671-1c74-450e-b42c-f21195c0c652",
+      "target": "34447ac1-91e3-43d0-9ea5-d56dca87ad10",
+      "targetHandle": "classicalHandleInputInitialization34447ac1-91e3-43d0-9ea5-d56dca87ad10-2",
+      "type": "classicalEdge",
+      "id": "4ebad09a-eb87-426f-9bdb-aba6115b8413",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#F5A843",
+        "hidden": false
+      }
+    },
+    {
+      "source": "ad4933d4-c7a7-4b34-bdd5-56751b4c9396",
+      "sourceHandle": "classicalHandleDataTypeOutput0ad4933d4-c7a7-4b34-bdd5-56751b4c9396",
+      "target": "34447ac1-91e3-43d0-9ea5-d56dca87ad10",
+      "targetHandle": "classicalHandleInputInitialization34447ac1-91e3-43d0-9ea5-d56dca87ad10-1",
+      "type": "classicalEdge",
+      "id": "114f668f-90c6-42de-b9c1-931525248a53",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#F5A843",
+        "hidden": false
+      }
+    },
+    {
+      "source": "96e94d2e-0d1f-4eaa-a29b-4feb0714f3e8",
+      "sourceHandle": "classicalHandleDataTypeOutput096e94d2e-0d1f-4eaa-a29b-4feb0714f3e8",
+      "target": "34447ac1-91e3-43d0-9ea5-d56dca87ad10",
+      "targetHandle": "classicalHandleInputInitialization34447ac1-91e3-43d0-9ea5-d56dca87ad10-0",
+      "type": "classicalEdge",
+      "id": "1326b92d-0a71-48d3-8b01-4253949c5be3",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#F5A843",
+        "hidden": false
+      }
+    }
+  ],
+  "viewport": {
+    "x": 337.25,
+    "y": -38,
+    "zoom": 0.5
+  }
+}
