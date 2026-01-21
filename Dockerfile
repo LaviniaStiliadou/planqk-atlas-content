@@ -2,8 +2,9 @@ FROM postgres:12
 
 LABEL MAINTAINER Manuela Weigold <manuela.weigold@iaas.uni-stuttgart.de>
 
-ENV QC_ATLAS_CONTENT_REPOSITORY_URL "git@github.com:PlanQK/planqk-atlas-content.git"
+ENV QC_ATLAS_CONTENT_REPOSITORY_URL "https://github.com/UST-QuAntiL/planqk-atlas-content.git"
 ENV QC_ATLAS_CONTENT_REPOSITORY_PATH "/var/qc-atlas/testdata"
+ENV QC_ATLAS_CONTENT_REPOSITORY_BRANCH "master"
 ENV SUBFOLDER_CONTENT_REPO_BACKUP_FILES "example-data/SQL/backup-files"
 ENV POSTGRES_PASSWORD postgres
 ENV POSTGRES_USER postgres
