@@ -4,33 +4,38 @@
     "name": "My Model",
     "description": "This is a model.",
     "author": "",
-    "id": "flow-1767778792826",
-    "timestamp": "2026-01-07T09:39:52.826Z"
+    "containsPlaceholder": false,
+    "id": "flow-1770581505317",
+    "timestamp": "2026-02-08T20:11:45.317Z"
   },
   "nodes": [
     {
-      "id": "7a9288a3-9aa0-4076-ab63-7ffc9cb168a7",
+      "id": "61559625-5a7c-4ccf-97bd-737c1ce8f035",
       "type": "statePreparationNode",
       "position": {
-        "x": 1110,
-        "y": 45
+        "x": 615,
+        "y": 225
       },
       "data": {
-        "label": "Encode Value",
+        "label": "Matrix Encoding",
         "inputs": [
           {
-            "id": "ecb2442d-92c6-49ba-ac52-ec755b1e7600",
+            "id": "33173c02-93c2-4b9f-83e2-283860887148",
+            "edgeId": "96b0f524-dc24-447a-a14e-de544ec39356",
             "outputIdentifier": "",
+            "targetHandle": "classicalHandleStatePreparationInput061559625-5a7c-4ccf-97bd-737c1ce8f035",
             "identifiers": [
-              "q786097"
-            ],
-            "label": ""
+              "q268894"
+            ]
           },
           {
-            "id": "ecb2442d-92c6-49ba-ac52-ec755b1e7600",
+            "id": "33173c02-93c2-4b9f-83e2-283860887148",
+            "edgeId": "96b0f524-dc24-447a-a14e-de544ec39356",
+            "outputIdentifier": "",
             "identifiers": [
-              "q786097"
-            ]
+              "q268894"
+            ],
+            "targetHandle": "classicalHandleStatePreparationInput061559625-5a7c-4ccf-97bd-737c1ce8f035"
           }
         ],
         "children": [],
@@ -38,32 +43,35 @@
         "implementationType": "",
         "uncomputeImplementationType": "",
         "uncomputeImplementation": "",
-        "completionGuaranteed": true,
+        "completionGuaranteed": false,
         "compactOptions": [
-          true
+          false
         ],
         "identifiers": [
-          "q576454"
+          "q268894"
         ],
-        "encodingType": "Matrix Encoding",
-        "bound": 0,
-        "size": "",
-        "outputIdentifier": ""
+        "inputTypes": [
+          "array"
+        ],
+        "outputTypes": [
+          "quantum register"
+        ],
+        "encodingType": "Matrix Encoding"
       },
       "width": 320,
       "height": 373,
       "positionAbsolute": {
-        "x": 1110,
-        "y": 45
+        "x": 615,
+        "y": 225
       },
       "dragging": true
     },
     {
-      "id": "ecb2442d-92c6-49ba-ac52-ec755b1e7600",
+      "id": "33173c02-93c2-4b9f-83e2-283860887148",
       "type": "dataTypeNode",
       "position": {
-        "x": 510,
-        "y": 150
+        "x": 90,
+        "y": 225
       },
       "data": {
         "label": "Array",
@@ -79,42 +87,45 @@
           false
         ],
         "identifiers": [
-          "q786097"
+          "q268894"
         ],
         "dataType": "Array",
         "value": "",
-        "outputIdentifier": ""
+        "outputIdentifier": "",
+        "inputTypes": [],
+        "outputTypes": {
+          "0": "Array"
+        }
       },
       "width": 450,
       "height": 270,
       "positionAbsolute": {
-        "x": 510,
-        "y": 150
+        "x": 90,
+        "y": 225
       },
       "dragging": true
     }
   ],
   "edges": [
     {
-      "source": "ecb2442d-92c6-49ba-ac52-ec755b1e7600",
-      "sourceHandle": "classicalHandleDataTypeOutput0ecb2442d-92c6-49ba-ac52-ec755b1e7600",
-      "target": "7a9288a3-9aa0-4076-ab63-7ffc9cb168a7",
-      "targetHandle": "classicalHandleStatePreparationInput07a9288a3-9aa0-4076-ab63-7ffc9cb168a7",
+      "source": "33173c02-93c2-4b9f-83e2-283860887148",
+      "sourceHandle": "classicalHandleDataTypeOutput033173c02-93c2-4b9f-83e2-283860887148",
+      "target": "61559625-5a7c-4ccf-97bd-737c1ce8f035",
+      "targetHandle": "classicalHandleStatePreparationInput061559625-5a7c-4ccf-97bd-737c1ce8f035",
       "type": "classicalEdge",
-      "id": "b51268cd-5c9f-44c9-8096-a9570f51a69c",
+      "id": "96b0f524-dc24-447a-a14e-de544ec39356",
       "markerEnd": {
         "type": "arrowclosed",
         "width": 20,
         "height": 20,
         "color": "#F5A843",
         "hidden": false
-      },
-      "selected": false
+      }
     }
   ],
   "viewport": {
-    "x": -439.854321357834,
-    "y": 61.84085740119747,
-    "zoom": 0.8414893084776158
+    "x": -197.5,
+    "y": -42.5,
+    "zoom": 1
   }
 }

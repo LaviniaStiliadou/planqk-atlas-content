@@ -4,33 +4,38 @@
     "name": "My Model",
     "description": "This is a model.",
     "author": "",
-    "id": "flow-1767778810029",
-    "timestamp": "2026-01-07T09:40:10.029Z"
+    "containsPlaceholder": false,
+    "id": "flow-1770581546382",
+    "timestamp": "2026-02-08T20:12:26.382Z"
   },
   "nodes": [
     {
-      "id": "7a9288a3-9aa0-4076-ab63-7ffc9cb168a7",
+      "id": "6b723714-d33f-4676-8795-9ce6f9125f4d",
       "type": "statePreparationNode",
       "position": {
-        "x": 1110,
-        "y": 45
+        "x": 615,
+        "y": 255
       },
       "data": {
-        "label": "Encode Value",
+        "label": "Schmidt Decomposition",
         "inputs": [
           {
-            "id": "ecb2442d-92c6-49ba-ac52-ec755b1e7600",
+            "id": "f4b36f60-2c09-43a7-873b-ae788b6efe1a",
+            "edgeId": "3d43b746-e5d4-436c-8ca3-1a0d02ac44a8",
             "outputIdentifier": "",
+            "targetHandle": "classicalHandleStatePreparationInput06b723714-d33f-4676-8795-9ce6f9125f4d",
             "identifiers": [
-              "q786097"
-            ],
-            "label": ""
+              "q858461"
+            ]
           },
           {
-            "id": "ecb2442d-92c6-49ba-ac52-ec755b1e7600",
+            "id": "f4b36f60-2c09-43a7-873b-ae788b6efe1a",
+            "edgeId": "3d43b746-e5d4-436c-8ca3-1a0d02ac44a8",
+            "outputIdentifier": "",
             "identifiers": [
-              "q786097"
-            ]
+              "q858461"
+            ],
+            "targetHandle": "classicalHandleStatePreparationInput06b723714-d33f-4676-8795-9ce6f9125f4d"
           }
         ],
         "children": [],
@@ -38,32 +43,35 @@
         "implementationType": "",
         "uncomputeImplementationType": "",
         "uncomputeImplementation": "",
-        "completionGuaranteed": true,
+        "completionGuaranteed": false,
         "compactOptions": [
-          true
+          false
         ],
         "identifiers": [
-          "q576454"
+          "q858461"
         ],
-        "encodingType": "Schmidt Decomposition",
-        "bound": 0,
-        "size": "",
-        "outputIdentifier": ""
+        "inputTypes": [
+          "array"
+        ],
+        "outputTypes": [
+          "quantum register"
+        ],
+        "encodingType": "Schmidt Decomposition"
       },
       "width": 320,
       "height": 373,
       "positionAbsolute": {
-        "x": 1110,
-        "y": 45
+        "x": 615,
+        "y": 255
       },
       "dragging": true
     },
     {
-      "id": "ecb2442d-92c6-49ba-ac52-ec755b1e7600",
+      "id": "f4b36f60-2c09-43a7-873b-ae788b6efe1a",
       "type": "dataTypeNode",
       "position": {
-        "x": 510,
-        "y": 150
+        "x": 45,
+        "y": 270
       },
       "data": {
         "label": "Array",
@@ -79,42 +87,45 @@
           false
         ],
         "identifiers": [
-          "q786097"
+          "q858461"
         ],
         "dataType": "Array",
         "value": "",
-        "outputIdentifier": ""
+        "outputIdentifier": "",
+        "inputTypes": [],
+        "outputTypes": {
+          "0": "Array"
+        }
       },
       "width": 450,
       "height": 270,
       "positionAbsolute": {
-        "x": 510,
-        "y": 150
+        "x": 45,
+        "y": 270
       },
       "dragging": true
     }
   ],
   "edges": [
     {
-      "source": "ecb2442d-92c6-49ba-ac52-ec755b1e7600",
-      "sourceHandle": "classicalHandleDataTypeOutput0ecb2442d-92c6-49ba-ac52-ec755b1e7600",
-      "target": "7a9288a3-9aa0-4076-ab63-7ffc9cb168a7",
-      "targetHandle": "classicalHandleStatePreparationInput07a9288a3-9aa0-4076-ab63-7ffc9cb168a7",
+      "source": "f4b36f60-2c09-43a7-873b-ae788b6efe1a",
+      "sourceHandle": "classicalHandleDataTypeOutput0f4b36f60-2c09-43a7-873b-ae788b6efe1a",
+      "target": "6b723714-d33f-4676-8795-9ce6f9125f4d",
+      "targetHandle": "classicalHandleStatePreparationInput06b723714-d33f-4676-8795-9ce6f9125f4d",
       "type": "classicalEdge",
-      "id": "b51268cd-5c9f-44c9-8096-a9570f51a69c",
+      "id": "3d43b746-e5d4-436c-8ca3-1a0d02ac44a8",
       "markerEnd": {
         "type": "arrowclosed",
         "width": 20,
         "height": 20,
         "color": "#F5A843",
         "hidden": false
-      },
-      "selected": false
+      }
     }
   ],
   "viewport": {
-    "x": -439.854321357834,
-    "y": 61.84085740119747,
-    "zoom": 0.8414893084776158
+    "x": -141.37999267578124,
+    "y": -32.5,
+    "zoom": 1
   }
 }
