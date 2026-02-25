@@ -92,20 +92,20 @@ INSERT INTO public.implementation (assumptions, contributors, dependencies, desc
 INSERT INTO public.implementation (assumptions, contributors, dependencies, description, input_format, license, link, name, technology, output_format, parameter, problem_statement, version, id, implemented_algorithm_id) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Hadamard Test Imaginary implementation', NULL, NULL, NULL, NULL, NULL, '41cbc632-5404-4320-a277-ae5913ffb0e8', '9edc0903-9b99-432b-b9eb-1f02570cb7d1');
 
 -- Pattern URIs for new implementations
-INSERT INTO public.pattern_uris (implementation_id, pattern_uri) VALUES ('527f3911-6549-4e07-b6a7-e8af1371f277', 'pattern-languages/af7780d5-1f97-4536-8da7-4194b093ab1d/59389814-01e0-4422-8012-a298940064aa');
-INSERT INTO public.pattern_uris (implementation_id, pattern_uri) VALUES ('2c2382ba-b145-4e37-a463-632a7cdd4b16', 'pattern-languages/af7780d5-1f97-4536-8da7-4194b093ab1d/5850c6ab-5c87-4331-8439-73692a403228');
-INSERT INTO public.pattern_uris (implementation_id, pattern_uri) VALUES ('2814c4d7-2763-4fd4-ac23-1c1c4c4ca935', 'pattern-languages/af7780d5-1f97-4536-8da7-4194b093ab1d/0ad210d4-18ad-4803-ba6b-536af0fab317');
-INSERT INTO public.pattern_uris (implementation_id, pattern_uri) VALUES ('40268dc8-1e82-4b6b-8d78-b32f48815d2e', 'pattern-languages/af7780d5-1f97-4536-8da7-4194b093ab1d/4074490a-4236-49ed-83d1-625ce58e2dbd');
+INSERT INTO public.pattern_uris (implementation_id, pattern_uri) VALUES ('527f3911-6549-4e07-b6a7-e8af1371f277', 'patternLanguages/af7780d5-1f97-4536-8da7-4194b093ab1d/patterns/59389814-01e0-4422-8012-a298940064aa');
+INSERT INTO public.pattern_uris (implementation_id, pattern_uri) VALUES ('2c2382ba-b145-4e37-a463-632a7cdd4b16', 'patternLanguages/af7780d5-1f97-4536-8da7-4194b093ab1d/patterns/5850c6ab-5c87-4331-8439-73692a403228');
+INSERT INTO public.pattern_uris (implementation_id, pattern_uri) VALUES ('2814c4d7-2763-4fd4-ac23-1c1c4c4ca935', 'patternLanguages/af7780d5-1f97-4536-8da7-4194b093ab1d/patterns/0ad210d4-18ad-4803-ba6b-536af0fab317');
+INSERT INTO public.pattern_uris (implementation_id, pattern_uri) VALUES ('40268dc8-1e82-4b6b-8d78-b32f48815d2e', 'patternLanguages/af7780d5-1f97-4536-8da7-4194b093ab1d/patterns/4074490a-4236-49ed-83d1-625ce58e2dbd');
 
-INSERT INTO public.pattern_uris (implementation_id, pattern_uri) VALUES ('b9450d3c-230f-4509-9ed9-2f95ce69a73c', 'pattern-languages/af7780d5-1f97-4536-8da7-4194b093ab1d/bcd4c7a1-3c92-4f8c-a530-72b8b95d3750');
-INSERT INTO public.pattern_uris (implementation_id, pattern_uri) VALUES ('25d7c366-1e9b-422a-b31a-d046d2426f35', 'pattern-languages/af7780d5-1f97-4536-8da7-4194b093ab1d/45d09c54-3f4a-453b-885d-2772443c8d72');
-INSERT INTO public.pattern_uris (implementation_id, pattern_uri) VALUES ('5a5b3d81-e2b8-42c8-8955-ecca85d9fbe0', 'pattern-languages/af7780d5-1f97-4536-8da7-4194b093ab1d/4437fb83-34c0-47a8-8c6f-1272a76b76bb');
-INSERT INTO public.pattern_uris (implementation_id, pattern_uri) VALUES ('2778bd5b-4818-43b3-bdd9-226adbaab82d', 'pattern-languages/af7780d5-1f97-4536-8da7-4194b093ab1d/502147ec-45fa-403f-8f52-e196b3359399');
+INSERT INTO public.pattern_uris (implementation_id, pattern_uri) VALUES ('b9450d3c-230f-4509-9ed9-2f95ce69a73c', 'patternLanguages/af7780d5-1f97-4536-8da7-4194b093ab1d/patterns/bcd4c7a1-3c92-4f8c-a530-72b8b95d3750');
+INSERT INTO public.pattern_uris (implementation_id, pattern_uri) VALUES ('25d7c366-1e9b-422a-b31a-d046d2426f35', 'patternLanguages/af7780d5-1f97-4536-8da7-4194b093ab1d/patterns/45d09c54-3f4a-453b-885d-2772443c8d72');
+INSERT INTO public.pattern_uris (implementation_id, pattern_uri) VALUES ('5a5b3d81-e2b8-42c8-8955-ecca85d9fbe0', 'patternLanguages/af7780d5-1f97-4536-8da7-4194b093ab1d/patterns/4437fb83-34c0-47a8-8c6f-1272a76b76bb');
+INSERT INTO public.pattern_uris (implementation_id, pattern_uri) VALUES ('2778bd5b-4818-43b3-bdd9-226adbaab82d', 'patternLanguages/af7780d5-1f97-4536-8da7-4194b093ab1d/patterns/502147ec-45fa-403f-8f52-e196b3359399');
 
-INSERT INTO public.pattern_uris (implementation_id, pattern_uri) VALUES ('b92d03a6-4023-49e6-95f5-889b66c0e8e3', 'pattern-languages/af7780d5-1f97-4536-8da7-4194b093ab1d/e595558d-bfea-4b82-9f47-a38a2097b245');
-INSERT INTO public.pattern_uris (implementation_id, pattern_uri) VALUES ('7e171909-a31d-465e-a50d-f39e24112323', 'pattern-languages/af7780d5-1f97-4536-8da7-4194b093ab1d/fd2bb9f3-b04a-4645-a2d0-ffa4d986db83');
-INSERT INTO public.pattern_uris (implementation_id, pattern_uri) VALUES ('c2f2b67f-0087-499b-94c9-9747df98999e', 'pattern-languages/af7780d5-1f97-4536-8da7-4194b093ab1d/37e64e06-9c2a-4c54-aa18-ddcf67f48a6a');
-INSERT INTO public.pattern_uris (implementation_id, pattern_uri) VALUES ('41cbc632-5404-4320-a277-ae5913ffb0e8', 'pattern-languages/af7780d5-1f97-4536-8da7-4194b093ab1d/37e64e06-9c2a-4c54-aa18-ddcf67f48a6a');
+INSERT INTO public.pattern_uris (implementation_id, pattern_uri) VALUES ('b92d03a6-4023-49e6-95f5-889b66c0e8e3', 'patternLanguages/af7780d5-1f97-4536-8da7-4194b093ab1d/patterns/e595558d-bfea-4b82-9f47-a38a2097b245');
+INSERT INTO public.pattern_uris (implementation_id, pattern_uri) VALUES ('7e171909-a31d-465e-a50d-f39e24112323', 'patternLanguages/af7780d5-1f97-4536-8da7-4194b093ab1d/patterns/fd2bb9f3-b04a-4645-a2d0-ffa4d986db83');
+INSERT INTO public.pattern_uris (implementation_id, pattern_uri) VALUES ('c2f2b67f-0087-499b-94c9-9747df98999e', 'patternLanguages/af7780d5-1f97-4536-8da7-4194b093ab1d/patterns/37e64e06-9c2a-4c54-aa18-ddcf67f48a6a');
+INSERT INTO public.pattern_uris (implementation_id, pattern_uri) VALUES ('41cbc632-5404-4320-a277-ae5913ffb0e8', 'patternLanguages/af7780d5-1f97-4536-8da7-4194b093ab1d/patterns/37e64e06-9c2a-4c54-aa18-ddcf67f48a6a');
 
 -- Files for pattern solutions
 INSERT INTO public.file (fileurl, mime_type, name, id) VALUES ('qaoa.json', 'application/json', 'qaoa.json', '93ca986a-6bab-4f9b-9c3e-0c22c991f042');
