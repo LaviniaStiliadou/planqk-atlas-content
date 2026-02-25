@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "name": "My Model",
+    "description": "This is a model.",
+    "author": "",
+    "id": "flow-1772033138657",
+    "timestamp": "2026-02-25T15:25:38.657Z"
+  },
+  "nodes": [
+    {
+      "id": "790f4b6a-305c-4c85-99ef-d7c2afa0ee64",
+      "type": "gateNode",
+      "position": {
+        "x": 480,
+        "y": 300
+      },
+      "data": {
+        "label": "Qubit Circuit",
+        "inputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "identifiers": [
+          "q814685"
+        ],
+        "inputTypes": [],
+        "outputTypes": [],
+        "parameter": "0"
+      },
+      "width": 110,
+      "height": 110,
+      "hidden": false,
+      "positionAbsolute": {
+        "x": 480,
+        "y": 300
+      }
+    }
+  ],
+  "edges": [],
+  "viewport": {
+    "x": -122.5,
+    "y": 29,
+    "zoom": 1
+  }
+}
