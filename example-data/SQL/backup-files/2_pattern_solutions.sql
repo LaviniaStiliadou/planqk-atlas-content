@@ -2,7 +2,7 @@
 ALTER TABLE public.implementation_package ADD COLUMN IF NOT EXISTS type character varying(255);
 
 -- Set solution types for existing workflow packages
-UPDATE public.implementation_package SET type = 'workflow_editor' WHERE id IN ('74e800a9-60c9-4561-a273-db80e513779b', '30e2883c-39e2-4188-915e-f70e793c5d4c');
+UPDATE public.implementation_package SET type = 'workflow_editor' WHERE id IN ('74e800a9-60c9-4561-a273-db80e513779b', '30e2883c-39e2-4188-915e-f70e793c5d4c', '2ea2af37-c7d6-4880-ba6b-c610ba44de13', 'f24603e0-849d-46f8-9e57-1fbaeaea91d5');
 
 -- Knowledge artifact entries for new algorithms, implementations, and files
 INSERT INTO public.knowledge_artifact (id, creation_date, last_modified_at) VALUES ('097f2afb-b5e0-489c-bf8b-25aa435f1f17', NULL, NULL);
