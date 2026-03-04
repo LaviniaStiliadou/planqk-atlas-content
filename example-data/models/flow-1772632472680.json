@@ -1,0 +1,319 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "name": "My Model",
+    "description": "This is a model.",
+    "author": "",
+    "containsPlaceholder": false,
+    "id": "flow-1772632472680",
+    "timestamp": "2026-03-04T13:54:32.681Z"
+  },
+  "nodes": [
+    {
+      "id": "ab7920f9-2fbb-4399-8836-a3f0e98f1396",
+      "type": "pluginNode",
+      "position": {
+        "x": 885,
+        "y": 285
+      },
+      "data": {
+        "label": "Quantum Clustering",
+        "pluginName": "quantum-k-means",
+        "tags": [],
+        "dataInputs": [
+          {
+            "parameter": "entityPointsUrl",
+            "data_type": "entity/vector",
+            "content_type": [
+              "application/json",
+              "text/csv"
+            ],
+            "required": true
+          },
+          {
+            "parameter": "numberOfClusters",
+            "data_type": "int",
+            "content_type": [
+              "text/plain"
+            ],
+            "required": true
+          },
+          {
+            "parameter": "variant",
+            "data_type": "string",
+            "content_type": [
+              "text/plain"
+            ],
+            "required": true
+          },
+          {
+            "parameter": "tolerance",
+            "data_type": "float",
+            "content_type": [
+              "text/plain"
+            ],
+            "required": false
+          },
+          {
+            "parameter": "maxIterations",
+            "data_type": "int",
+            "content_type": [
+              "text/plain"
+            ],
+            "required": false
+          }
+        ],
+        "dataOutputs": [
+          {
+            "name": "Cluster Labels",
+            "data_type": "entity/label",
+            "content_type": [
+              "application/json"
+            ],
+            "required": true
+          },
+          {
+            "name": "Visualization",
+            "data_type": "plot",
+            "content_type": [
+              "text/html"
+            ],
+            "required": false
+          }
+        ],
+        "inputs": [
+          {
+            "id": "e12f54d0-1b93-4991-8b12-d1dacab026f2",
+            "edgeId": "50bc0902-8030-4494-98d0-84e4cfa36160",
+            "outputIdentifier": "",
+            "identifiers": [
+              "q735701"
+            ],
+            "targetHandle": "classicalHandlePluginInput1ab7920f9-2fbb-4399-8836-a3f0e98f1396"
+          },
+          {
+            "id": "201e5dd5-4d97-4cf6-a37e-0efe50070ab4",
+            "edgeId": "a528a3c2-2abe-41f0-abc7-b36455c9f67a",
+            "outputIdentifier": "",
+            "identifiers": [
+              "q618685"
+            ],
+            "targetHandle": "classicalHandlePluginInput2ab7920f9-2fbb-4399-8836-a3f0e98f1396"
+          },
+          {
+            "id": "78118952-993e-4959-8046-dca318078127",
+            "edgeId": "549ea092-5454-462a-93f2-7242dc0cabfd",
+            "outputIdentifier": "",
+            "identifiers": [
+              "q161417"
+            ],
+            "targetHandle": "classicalHandlePluginInput0ab7920f9-2fbb-4399-8836-a3f0e98f1396"
+          }
+        ],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "clusteringAlgorithm": "k-means",
+        "identifiers": [
+          "q161417"
+        ],
+        "inputTypes": [
+          "file",
+          "number",
+          "string",
+          "number",
+          "number"
+        ],
+        "outputTypes": {
+          "0": "array",
+          "1": "any"
+        }
+      },
+      "width": 320,
+      "height": 590,
+      "positionAbsolute": {
+        "x": 885,
+        "y": 285
+      },
+      "dragging": true,
+      "hidden": false
+    },
+    {
+      "id": "e12f54d0-1b93-4991-8b12-d1dacab026f2",
+      "type": "dataTypeNode",
+      "position": {
+        "x": 255,
+        "y": 540
+      },
+      "data": {
+        "label": "Number",
+        "inputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "identifiers": [
+          "q735701"
+        ],
+        "dataType": "Number",
+        "value": "2",
+        "outputIdentifier": "",
+        "inputTypes": [],
+        "outputTypes": {
+          "0": "Number"
+        }
+      },
+      "width": 450,
+      "height": 270,
+      "positionAbsolute": {
+        "x": 255,
+        "y": 540
+      },
+      "dragging": true,
+      "hidden": false
+    },
+    {
+      "id": "201e5dd5-4d97-4cf6-a37e-0efe50070ab4",
+      "type": "dataTypeNode",
+      "position": {
+        "x": 270,
+        "y": 870
+      },
+      "data": {
+        "label": "String",
+        "inputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "identifiers": [
+          "q618685"
+        ],
+        "dataType": "String",
+        "value": "NegativeRouting",
+        "outputIdentifier": "",
+        "inputTypes": [],
+        "outputTypes": {
+          "0": "String"
+        }
+      },
+      "width": 450,
+      "height": 270,
+      "positionAbsolute": {
+        "x": 270,
+        "y": 870
+      },
+      "dragging": true,
+      "hidden": false
+    },
+    {
+      "id": "78118952-993e-4959-8046-dca318078127",
+      "type": "dataTypeNode",
+      "position": {
+        "x": 195,
+        "y": 180
+      },
+      "data": {
+        "label": "File",
+        "inputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "identifiers": [
+          "q161417"
+        ],
+        "dataType": "File",
+        "value": "http://localhost:9091/experiments/1/data/entity_points_mds_dim_2_metric_metric_from_entity_distances_aggregator_mean_from_transformers_attr_dist_transformer_linear_inverse_from_sym_max_mean_Yyfegz-Otytf.json/download?version=1",
+        "outputIdentifier": "",
+        "inputTypes": [],
+        "outputTypes": {
+          "0": "File"
+        }
+      },
+      "width": 450,
+      "height": 270,
+      "positionAbsolute": {
+        "x": 195,
+        "y": 180
+      },
+      "dragging": true,
+      "hidden": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "78118952-993e-4959-8046-dca318078127",
+      "sourceHandle": "classicalHandleDataTypeOutput078118952-993e-4959-8046-dca318078127",
+      "target": "ab7920f9-2fbb-4399-8836-a3f0e98f1396",
+      "targetHandle": "classicalHandlePluginInput0ab7920f9-2fbb-4399-8836-a3f0e98f1396",
+      "type": "classicalEdge",
+      "id": "549ea092-5454-462a-93f2-7242dc0cabfd",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#F5A843",
+        "hidden": false
+      },
+      "hidden": false
+    },
+    {
+      "source": "201e5dd5-4d97-4cf6-a37e-0efe50070ab4",
+      "sourceHandle": "classicalHandleDataTypeOutput0201e5dd5-4d97-4cf6-a37e-0efe50070ab4",
+      "target": "ab7920f9-2fbb-4399-8836-a3f0e98f1396",
+      "targetHandle": "classicalHandlePluginInput2ab7920f9-2fbb-4399-8836-a3f0e98f1396",
+      "type": "classicalEdge",
+      "id": "a528a3c2-2abe-41f0-abc7-b36455c9f67a",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#F5A843",
+        "hidden": false
+      },
+      "hidden": false
+    },
+    {
+      "source": "e12f54d0-1b93-4991-8b12-d1dacab026f2",
+      "sourceHandle": "classicalHandleDataTypeOutput0e12f54d0-1b93-4991-8b12-d1dacab026f2",
+      "target": "ab7920f9-2fbb-4399-8836-a3f0e98f1396",
+      "targetHandle": "classicalHandlePluginInput1ab7920f9-2fbb-4399-8836-a3f0e98f1396",
+      "type": "classicalEdge",
+      "id": "50bc0902-8030-4494-98d0-84e4cfa36160",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#F5A843",
+        "hidden": false
+      },
+      "hidden": false
+    }
+  ],
+  "viewport": {
+    "x": -51.405303030303,
+    "y": -30.125000000000057,
+    "zoom": 0.6070075757575758
+  }
+}
